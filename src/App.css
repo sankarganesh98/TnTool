@@ -1,0 +1,8 @@
+main {
+    margin-top: 60px; /* Only apply top margin here to push down the content below the navbar */
+    margin-left: 230px; /* Adjust according to your sidebar's width */
+    padding: 20px; /* Padding inside main for content */
+    width: calc(100% - 230px); /* Adjust width based on the sidebar */
+    min-height: calc(100vh - 60px); /* Adjust height based on the navbar */
+    position: relative; /* Ensures layout is calculated based on non-fixed positioning */
+}

@@ -1,0 +1,29 @@
+.topNavbar {
+    width: calc(100% - 230px);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    z-index: 1050;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+}
+
+.pageTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    line-height: 50px; 
+}
+
+.navRight {
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+}

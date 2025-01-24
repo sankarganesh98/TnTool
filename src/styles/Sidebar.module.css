@@ -1,0 +1,121 @@
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+    margin: 0; 
+    text-decoration: none; /* Removes underline */
+
+    
+}
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    position: fixed; 
+    top: 0;         
+    left: 0;        
+    z-index: 1000;  
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    border-right: 2px solid rgba(0, 0, 0, 0.1); 
+}
+.menuContent {
+    display: flex;  /* Using flexbox to layout children */
+    flex-direction: column;  /* Align children vertically */
+    gap: 15px;  /* Space between each child */
+    padding: 10px 0;  /* Padding at the top and bottom for extra space */
+}
+/* Sidebar Item Styles */
+.sidebarItem {
+    display: flex; /* Flexbox for internal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 10px; /* Padding inside each item */
+    text-align: left; /* Text aligned to the left */
+    font-size: 14px; /* Font size for the text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for background and shadow */
+    border-radius: 5px; /* Rounded corners for aesthetic */
+    width: calc(100% - 5px); /* Full width minus padding */
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-decoration: none; /* No underline on links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+/* Hover and Active State Styles */
+.sidebarItem:hover, .sidebarItem.active {
+    background-color: #f0f0f0; /* Light grey background for hover and active */
+}
+
+.sidebarItem.active {
+    background-color: #e0e0e0; /* Slightly darker grey for active */
+    font-weight: bold; /* Bolder font for active items */
+}
+.avatarSection {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.1); 
+
+}
+
+.avatar {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover; 
+}
+
+.avatarSection i {
+    font-size: 40px;
+    margin-right: 10px; 
+}
+
+.accountName {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    line-height: 50px; 
+}
+
+.logoutButton {
+    background-color: rgb(250, 87, 120);
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 85%; 
+    height: 35px;
+    margin-bottom: 40px; 
+    margin-left: 20px;
+}
+
+.logoutButton:hover {
+    background-color: rgb(250, 60, 98); 
+}
+
+
+.companyLogoPlaceholder {
+    width: 100%; 
+    height: 70px; 
+    background-color: white;
+    align-self: center; 
+    padding: 0; 
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.companyLogo {
+    width: 80%;
+    height: 60px;
+    border: none;
+   
+}
